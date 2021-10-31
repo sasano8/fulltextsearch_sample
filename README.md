@@ -1,6 +1,10 @@
 # fulltextsearch
 fastapi + sqlalchemy + postgressqlで全文検索を実装します。
 
+# 試そうとした動機
+
+elasticsearch導入は腰が重い。
+
 # getting started
 
 1. プロジェクトルートに`.env`を作成します
@@ -85,8 +89,9 @@ postgresqlの全文検索はアジア圏の文字を正確に検索できない�
 SQLAlchemy-Searchableによって全文検索を実現しています。
 要点として、次の手続きを守る必要があります。
 
-1. モデル作成前に`make_searchable`を呼び出す
-2. テーブル作成前に`configure_mappers`を呼び出す
+1. SQLAlchemy-Searchableはpostgressqlのみ対応です
+2. モデル作成前に`make_searchable`を呼び出す
+3. テーブル作成前に`configure_mappers`を呼び出す
 
 ``` python
 import sqlalchemy as sa
