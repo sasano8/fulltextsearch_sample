@@ -84,6 +84,7 @@ postgresqlの全文検索はアジア圏の文字を正確に検索できない�
 - pg_bigm（バイグラムによる検索）
 - PGroonga(pg_bigmより検索が高速。ただし、pg_bigmよりインデックス作成時間が遅い)
 - sqlite + fts5(sqlalchemy-searchableは使えない)
+- mysql(標準で日本語全文検索が可能らしい)
 
 # アプリケーション実装上の注意点
 
