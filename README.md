@@ -3,7 +3,7 @@ fastapi + sqlalchemy + postgressqlで全文検索を実装します。
 
 # 試そうとした動機
 
-elasticsearch導入は腰が重い。
+elasticsearchは腰が重いので、もう少し簡単に実装できる全文検索が欲しかった。
 
 # getting started
 
@@ -115,3 +115,8 @@ sa.orm.configure_mappers()
 ``` python
 make_searchable(SQLModel.metadata, options={regconfig="pg_catalog.japanese"})
 ```
+
+# TODO
+
+- 日本語全文検索を実現したい
+- sqlalchemy-filtersで動的なクエリに対応させたい
