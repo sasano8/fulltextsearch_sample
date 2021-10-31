@@ -1,0 +1,11 @@
+.venv
+.mypy_cache
+.pytest_cache
+__pycache__
+.env
+.idea
+.hypothesis
+core
+doc/er.png
+doc/tables.md
+vendor/*

@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "fulltextsearch_sample"
+version = "0.1.0"
+description = ""
+authors = ["yourname <yourname@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+SQLAlchemy = "^1.4.26"
+python-dotenv = "^0.19.1"
+sqlmodel = "^0.0.4"
+psycopg2-binary = "^2.9.1"
+SQLAlchemy-Utils = "^0.37.9"
+SQLAlchemy-Searchable = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+flake8 = "^3.9.0"
+mypy = "^0.910"
+isort = "^5.9.3"
+pytest = "^6.2.2"
+pre-commit = "^2.12.0"
+requests = "^2.26.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+
+
+# [tool.pytest.ini_options]
+# addopts=-n4
