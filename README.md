@@ -120,3 +120,4 @@ make_searchable(SQLModel.metadata, options={regconfig="pg_catalog.japanese"})
 
 - 日本語全文検索を実現したい
 - sqlalchemy-filtersで動的なクエリに対応させたい
+- graphqlに対応させたい
